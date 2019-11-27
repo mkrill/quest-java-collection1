@@ -22,15 +22,16 @@ public class Thanos {
         // name: Scarlet Witch, age: 29
     	heroes.add(new Hero("Scarlet Witch", 29));
         // name: Thor, age: 1500
-    	heroes.add(new Hero("Thor", 1500));
+    	Hero thor = new Hero("Thor", 1500);
+    	heroes.add(thor);
         // name: Hulk, age: 49
     	heroes.add(new Hero("Hulk", 49));
         // name: Doctor Strange, age: 42
-    	Hero thor = new Hero("Doctor Strange", 42);
-    	heroes.add(thor);
+    	heroes.add(new Hero("Doctor Strange", 42));
 
         // TODO 3 : It's Thor birthday, now he's 1501
     	thor.setAge(thor.getAge()+1);
+    	System.out.println("Thor has turned: " + thor.getAge() + ".\n");
 
         // TODO 4 : Shuffle the heroes list
         Collections.shuffle(heroes);
